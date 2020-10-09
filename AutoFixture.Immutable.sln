@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Immutable", "AutoFixture.Immutable\AutoFixture.Immutable.csproj", "{B64D773C-BD0D-49A1-988A-27938EB4F525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Immutable.Tests", "AutoFixture.Immutable.Tests\AutoFixture.Immutable.Tests.csproj", "{449B43CF-E602-4B4F-B535-FE1129C87147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Immutable.Sandbox", "AutoFixture.Immutable.Sandbox\AutoFixture.Immutable.Sandbox.csproj", "{270C446D-2258-41D9-9A42-0E03FFFE0CB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64D773C-BD0D-49A1-988A-27938EB4F525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64D773C-BD0D-49A1-988A-27938EB4F525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64D773C-BD0D-49A1-988A-27938EB4F525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64D773C-BD0D-49A1-988A-27938EB4F525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449B43CF-E602-4B4F-B535-FE1129C87147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449B43CF-E602-4B4F-B535-FE1129C87147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449B43CF-E602-4B4F-B535-FE1129C87147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449B43CF-E602-4B4F-B535-FE1129C87147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{270C446D-2258-41D9-9A42-0E03FFFE0CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{270C446D-2258-41D9-9A42-0E03FFFE0CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{270C446D-2258-41D9-9A42-0E03FFFE0CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{270C446D-2258-41D9-9A42-0E03FFFE0CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
