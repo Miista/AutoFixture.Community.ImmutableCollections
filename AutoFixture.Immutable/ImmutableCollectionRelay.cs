@@ -53,7 +53,7 @@ namespace AutoFixture
         private static object CreateImmutableList(Type resultType, ISpecimenContext context)
             => CreateImmutableCollection(resultType, context, 
                 collectionType: typeof(ImmutableList),
-                createMethodName: nameof(ImmutableList.ToImmutableList));
+                createMethodName: nameof(ImmutableList.CreateRange));
         
         private static object CreateImmutableQueue(Type resultType, ISpecimenContext context)
             => CreateImmutableCollection(resultType, context, 
@@ -63,7 +63,7 @@ namespace AutoFixture
         private static object CreateImmutableArray(Type resultType, ISpecimenContext context)
             => CreateImmutableCollection(resultType, context, 
                 collectionType: typeof(ImmutableArray),
-                createMethodName: nameof(ImmutableArray.ToImmutableArray));
+                createMethodName: nameof(ImmutableArray.CreateRange));
 
         private static object CreateImmutableStack(Type resultType, ISpecimenContext context)
             => CreateImmutableCollection(resultType, context, 
@@ -73,22 +73,22 @@ namespace AutoFixture
         private static object CreateImmutableHashSet(Type resultType, ISpecimenContext context)
             => CreateImmutableCollection(resultType, context, 
                 collectionType: typeof(ImmutableHashSet),
-                createMethodName: nameof(ImmutableHashSet.ToImmutableHashSet));
+                createMethodName: nameof(ImmutableHashSet.CreateRange));
         
         private static object CreateImmutableSortedSet(Type resultType, ISpecimenContext context)
             => CreateImmutableCollection(resultType, context, 
                 collectionType: typeof(ImmutableSortedSet),
-                createMethodName: nameof(ImmutableSortedSet.ToImmutableSortedSet));
+                createMethodName: nameof(ImmutableSortedSet.CreateRange));
         
         private static object CreateImmutableDictionary(Type keyType, Type valueType, ISpecimenContext context)
             => CreateImmutableDictionary(keyType, valueType, context,
                 collectionType: typeof(ImmutableDictionary),
-                createMethodName: nameof(ImmutableDictionary.ToImmutableDictionary));
+                createMethodName: nameof(ImmutableDictionary.CreateRange));
         
         private static object CreateImmutableSortedDictionary(Type keyType, Type valueType, ISpecimenContext context)
             => CreateImmutableDictionary(keyType, valueType, context,
                 collectionType: typeof(ImmutableSortedDictionary),
-                createMethodName: nameof(ImmutableSortedDictionary.ToImmutableSortedDictionary));
+                createMethodName: nameof(ImmutableSortedDictionary.CreateRange));
 
         /// <summary>
         /// 
