@@ -20,22 +20,7 @@ namespace AutoFixture.Immutable.Tests
             result.Should().NotBeNull();
             result.Should().NotBeEmpty();
         }
-        
-        [Fact]
-        public void Can_create_immutable_dictionary()
-        {
-            // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
-            // Act
-            var result = fixture.Create<ImmutableDictionary<string, string>>();
-            
-            // Assert
-            result.Should().NotBeNull();
-            result.Should().NotBeEmpty();
-        }
-        
+
         [Fact]
         public void Can_create_immutable_queue_interface()
         {
@@ -50,7 +35,52 @@ namespace AutoFixture.Immutable.Tests
             result.Should().NotBeNull();
             result.Should().NotBeEmpty();
         }
+
+        [Fact]
+        public void Can_create_immutable_dictionary()
+        {
+            // Arrange
+            var fixture = new Fixture();
+            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            
+            // Act
+            var result = fixture.Create<ImmutableDictionary<string, string>>();
+            
+            // Assert
+            result.Should().NotBeNull();
+            result.Should().NotBeEmpty();
+        }
+
+        [Fact]
+        public void Can_create_immutable_sorted_dictionary()
+        {
+            // Arrange
+            var fixture = new Fixture();
+            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            
+            // Act
+            var result = fixture.Create<ImmutableSortedDictionary<string, string>>();
+            
+            // Assert
+            result.Should().NotBeNull();
+            result.Should().NotBeEmpty();
+        }
         
+        [Fact]
+        public void Can_create_immutable_dictionary_interface()
+        {
+            // Arrange
+            var fixture = new Fixture();
+            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            
+            // Act
+            var result = fixture.Create<IImmutableDictionary<string, string>>();
+            
+            // Assert
+            result.Should().NotBeNull();
+            result.Should().NotBeEmpty();
+        }
+
         [Fact]
         public void Can_create_immutable_list()
         {
@@ -60,6 +90,21 @@ namespace AutoFixture.Immutable.Tests
             
             // Act
             var result = fixture.Create<ImmutableList<string>>();
+            
+            // Assert
+            result.Should().NotBeNull();
+            result.Should().NotBeEmpty();
+        }
+        
+        [Fact]
+        public void Can_create_immutable_list_interface()
+        {
+            // Arrange
+            var fixture = new Fixture();
+            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            
+            // Act
+            var result = fixture.Create<IImmutableList<string>>();
             
             // Assert
             result.Should().NotBeNull();
@@ -80,22 +125,22 @@ namespace AutoFixture.Immutable.Tests
             result.Should().NotBeNull();
             result.Should().NotBeEmpty();
         }
-        
+
         [Fact]
-        public void Can_create_immutable_hash_set()
+        public void Can_create_immutable_stack_interface()
         {
             // Arrange
             var fixture = new Fixture();
             fixture.Customizations.Add(new ImmutableCollectionRelay());
             
             // Act
-            var result = fixture.Create<ImmutableHashSet<string>>();
+            var result = fixture.Create<IImmutableStack<string>>();
             
             // Assert
             result.Should().NotBeNull();
             result.Should().NotBeEmpty();
         }
-        
+
         [Fact]
         public void Can_create_immutable_array()
         {
@@ -110,7 +155,22 @@ namespace AutoFixture.Immutable.Tests
             result.Should().NotBeNull();
             result.Should().NotBeEmpty();
         }
-        
+
+        [Fact]
+        public void Can_create_immutable_hash_set()
+        {
+            // Arrange
+            var fixture = new Fixture();
+            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            
+            // Act
+            var result = fixture.Create<ImmutableHashSet<string>>();
+            
+            // Assert
+            result.Should().NotBeNull();
+            result.Should().NotBeEmpty();
+        }
+
         [Fact]
         public void Can_create_immutable_sorted_set()
         {
@@ -120,6 +180,21 @@ namespace AutoFixture.Immutable.Tests
             
             // Act
             var result = fixture.Create<ImmutableSortedSet<string>>();
+            
+            // Assert
+            result.Should().NotBeNull();
+            result.Should().NotBeEmpty();
+        }
+
+        [Fact]
+        public void Can_create_immutable_set_interface()
+        {
+            // Arrange
+            var fixture = new Fixture();
+            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            
+            // Act
+            var result = fixture.Create<IImmutableSet<string>>();
             
             // Assert
             result.Should().NotBeNull();

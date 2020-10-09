@@ -43,7 +43,9 @@ namespace AutoFixture
             if (valueType == null)
                 return new NoSpecimen();
             
+            if (typeDefinition == typeof(IImmutableDictionary<,>)) return CreateImmutableDictionary(innerType, valueType, context);
             if (typeDefinition == typeof(ImmutableDictionary<,>)) return CreateImmutableDictionary(innerType, valueType, context);
+            if (typeDefinition == typeof(ImmutableSortedDictionary<,>)) return CreateImmutableSortedDictionary(innerType, valueType, context);
 
             return new NoSpecimen();
         }
@@ -82,6 +84,11 @@ namespace AutoFixture
             => CreateImmutableDictionary(keyType, valueType, context,
                 collectionType: typeof(ImmutableDictionary),
                 createMethodName: nameof(ImmutableDictionary.ToImmutableDictionary));
+        
+        private static object CreateImmutableSortedDictionary(Type keyType, Type valueType, ISpecimenContext context)
+            => CreateImmutableDictionary(keyType, valueType, context,
+                collectionType: typeof(ImmutableSortedDictionary),
+                createMethodName: nameof(ImmutableSortedDictionary.ToImmutableSortedDictionary));
 
         /// <summary>
         /// 
