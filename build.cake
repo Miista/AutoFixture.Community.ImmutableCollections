@@ -37,7 +37,7 @@ Task("Pack")
   .IsDependentOn("Test")
   .Does(() =>
 {
-  Pack("AutoFixture.Immutable", new [] { "netstandard2.0" });
+  Pack("AutoFixture.Immutable", new [] { "netstandard2.0", "net46" });
 })
 ;
 
