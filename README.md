@@ -2,7 +2,7 @@
 
 Creating specimens for System.Collections.Immutable.
 
-Supports **.NET Core** (.NET Standard 1.5+)
+Supports **.NET Core** (.NET Standard 2+)
 
 ## Installation
 
