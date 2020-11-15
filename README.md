@@ -1,4 +1,4 @@
-# AutoFixture.Community.Immutable
+# AutoFixture.Community.ImmutableCollections
 
 Creating specimens for System.Collections.Immutable.
 
@@ -7,11 +7,11 @@ Supports **.NET Core** (.NET Standard 1.5+)
 ## Installation
 
 ```
-PM> Install-Package AutoFixture.Community.Immutable
+PM> Install-Package AutoFixture.Community.ImmutableCollections
 ```
 
 ## Usage
 ```csharp
-var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
-var optionalString = fixture.Create<Option<string>>();
+var fixture = new Fixture().Customize(new ImmutableCollectionsCustomization());
+var immutableList = fixture.Create<ImmutableList<string>>();
 ```
