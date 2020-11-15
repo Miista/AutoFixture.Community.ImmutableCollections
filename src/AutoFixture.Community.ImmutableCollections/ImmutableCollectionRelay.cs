@@ -5,8 +5,7 @@ using System.Linq;
 using System.Reflection;
 using AutoFixture.Kernel;
 
-// ReSharper disable once CheckNamespace
-namespace AutoFixture
+namespace AutoFixture.Community.ImmutableCollections
 {
     internal class ImmutableCollectionRelay : ISpecimenBuilder
     {

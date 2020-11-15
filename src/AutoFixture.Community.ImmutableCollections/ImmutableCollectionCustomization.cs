@@ -1,4 +1,5 @@
 using System;
+using AutoFixture.Community.ImmutableCollections;
 
 // ReSharper disable once CheckNamespace
 namespace AutoFixture

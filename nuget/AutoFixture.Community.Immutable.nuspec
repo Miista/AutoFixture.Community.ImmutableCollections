@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>AutoFixture.Community.Immutable</id>
+    <id>AutoFixture.Community.ImmutableCollections</id>
     <version>1.0.0-alpha</version>
     <title>AutoFixture: Creating Immutable Collections</title>
     <authors>Søren Guldmund</authors>
     <owners>Søren Guldmund</owners>
-    <projectUrl>https://github.com/miista/AutoFixture.Community.Immutable</projectUrl>
-    <repository type="git" url="https://github.com/Miista/AutoFixture.Community.Immutable.git" />
+    <projectUrl>https://github.com/Miista/AutoFixture.Community.ImmutableCollections</projectUrl>
+    <repository type="git" url="https://github.com/Miista/AutoFixture.Community.ImmutableCollection.git" />
     <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An AutoFixture customization that allows AutoFixture to create specimens of the immutable collections found in the System.Collections.Immutable namespace.</description>
     <copyright>Copyright 2020</copyright>
-    <tags>AutoFixture Community Immutable ImmutableCollection ImmutableList ImmutableDictionary ImmutableHashSet ImmutableQueue</tags>
+    <tags>AutoFixture Community Immutable ImmutableCollection ImmutableArray ImmutableList ImmutableDictionary ImmutableHashSet ImmutableQueue</tags>
     <releaseNotes>Initial release</releaseNotes>
 
     <dependencies>

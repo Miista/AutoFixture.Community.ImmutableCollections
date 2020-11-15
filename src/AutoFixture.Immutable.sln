@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.ImmutableCollection", "AutoFixture.Community.ImmutableCollection\AutoFixture.Community.ImmutableCollection.csproj", "{B64D773C-BD0D-49A1-988A-27938EB4F525}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.ImmutableCollections", "AutoFixture.Community.ImmutableCollections\AutoFixture.Community.ImmutableCollections.csproj", "{B64D773C-BD0D-49A1-988A-27938EB4F525}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.ImmutableCollection.Tests", "AutoFixture.Community.ImmutableCollection.Tests\AutoFixture.Community.ImmutableCollection.Tests.csproj", "{449B43CF-E602-4B4F-B535-FE1129C87147}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.ImmutableCollections.Tests", "AutoFixture.Community.ImmutableCollections.Tests\AutoFixture.Community.ImmutableCollections.Tests.csproj", "{449B43CF-E602-4B4F-B535-FE1129C87147}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.ImmutableCollection.Sandbox", "AutoFixture.Community.ImmutableCollection.Sandbox\AutoFixture.Community.ImmutableCollection.Sandbox.csproj", "{270C446D-2258-41D9-9A42-0E03FFFE0CB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoFixture.Community.ImmutableCollections.Sandbox", "AutoFixture.Community.ImmutableCollections.Sandbox\AutoFixture.Community.ImmutableCollections.Sandbox.csproj", "{270C446D-2258-41D9-9A42-0E03FFFE0CB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

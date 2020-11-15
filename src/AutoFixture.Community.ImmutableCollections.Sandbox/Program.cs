@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Immutable;
 
-namespace AutoFixture.Community.ImmutableCollection.Sandbox
+namespace AutoFixture.Community.ImmutableCollections.Sandbox
 {
     class Program
     {
