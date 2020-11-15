@@ -6,4 +6,5 @@ riderModule.iml
 .idea/
 *.DotSettings.user
 .store/
+!nuget/*.nuspec
 nuget/*.nupkg

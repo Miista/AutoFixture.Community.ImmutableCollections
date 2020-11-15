@@ -1,6 +1,20 @@
 var target = Argument("target", "Default");
 
 var solutionFile = "./src/AutoFixture.Immutable.sln";
+var packages = new List<Package>
+{
+  new Package
+  {
+    Project = "AutoFixture.Community.Immutable",
+    Targets = new []{"netstandard2.0"}
+  }
+};
+
+class Package
+{
+  public string Project { get; set; }
+  public string[] Targets { get; set; }
+}
 
 Task("Build")
   .Does(() =>
@@ -37,7 +51,10 @@ Task("Pack")
   .IsDependentOn("Test")
   .Does(() =>
 {
-  Pack("AutoFixture.Immutable", new [] { "netstandard2.0", "net46" });
+  foreach (var package in packages)
+  {
+    Pack(package.Project, package.Targets);
+  }
 })
 ;
 
