@@ -2,7 +2,7 @@ using System.Collections.Immutable;
 using FluentAssertions;
 using Xunit;
 
-namespace AutoFixture.Immutable.Tests
+namespace AutoFixture.Community.Immutable.Tests
 {
     public class ImmutableCollectionRelayTests
     {
