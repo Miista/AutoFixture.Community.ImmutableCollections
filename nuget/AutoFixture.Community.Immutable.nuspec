@@ -17,7 +17,7 @@
 
     <dependencies>
       <group targetFramework="netstandard2.0">
-        <dependency id="AutoFixture" version="4.11.0" />
+        <dependency id="AutoFixture" version="4.3.0" />
         <dependency id="System.Collections.Immutable" version="1.5.0" />
       </group>
     </dependencies>
