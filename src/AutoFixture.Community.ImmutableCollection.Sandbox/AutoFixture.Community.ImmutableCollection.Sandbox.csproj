@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AutoFixture.Community.Immutable\AutoFixture.Community.Immutable.csproj" />
+    <ProjectReference Include="..\AutoFixture.Community.ImmutableCollection\AutoFixture.Community.ImmutableCollection.csproj" />
   </ItemGroup>
 
 </Project>
