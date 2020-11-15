@@ -10,8 +10,7 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_queue()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
             
             // Act
             var result = fixture.Create<ImmutableQueue<string>>();
@@ -25,8 +24,7 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_queue_interface()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
             
             // Act
             var result = fixture.Create<IImmutableQueue<string>>();
@@ -40,8 +38,7 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_dictionary()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
             
             // Act
             var result = fixture.Create<ImmutableDictionary<string, string>>();
@@ -55,9 +52,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_sorted_dictionary()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<ImmutableSortedDictionary<string, string>>();
             
@@ -70,9 +66,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_dictionary_interface()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<IImmutableDictionary<string, string>>();
             
@@ -85,9 +80,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_list()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<ImmutableList<string>>();
             
@@ -100,9 +94,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_list_interface()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<IImmutableList<string>>();
             
@@ -115,9 +108,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_stack()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<ImmutableStack<string>>();
             
@@ -130,9 +122,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_stack_interface()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<IImmutableStack<string>>();
             
@@ -145,9 +136,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_array()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<ImmutableArray<string>>();
             
@@ -160,9 +150,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_hash_set()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<ImmutableHashSet<string>>();
             
@@ -175,9 +164,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_sorted_set()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<ImmutableSortedSet<string>>();
             
@@ -190,9 +178,8 @@ namespace AutoFixture.Community.Immutable.Tests
         public void Can_create_immutable_set_interface()
         {
             // Arrange
-            var fixture = new Fixture();
-            fixture.Customizations.Add(new ImmutableCollectionRelay());
-            
+            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+
             // Act
             var result = fixture.Create<IImmutableSet<string>>();
             

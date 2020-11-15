@@ -8,7 +8,7 @@ using AutoFixture.Kernel;
 // ReSharper disable once CheckNamespace
 namespace AutoFixture
 {
-    public class ImmutableCollectionRelay : ISpecimenBuilder
+    internal class ImmutableCollectionRelay : ISpecimenBuilder
     {
         public object Create(object request, ISpecimenContext context)
         {
