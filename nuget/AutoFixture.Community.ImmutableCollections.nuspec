@@ -7,7 +7,7 @@
     <authors>Søren Guldmund</authors>
     <owners>Søren Guldmund</owners>
     <projectUrl>https://github.com/Miista/AutoFixture.Community.ImmutableCollections</projectUrl>
-    <repository type="git" url="https://github.com/Miista/AutoFixture.Community.ImmutableCollection.git" />
+    <repository type="git" url="https://github.com/Miista/AutoFixture.Community.ImmutableCollections.git" />
     <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>An AutoFixture customization that allows AutoFixture to create specimens of the immutable collections found in the System.Collections.Immutable namespace.</description>
