@@ -7,7 +7,7 @@ namespace AutoFixture.Community.ImmutableCollections.Sandbox
     {
         static void Main(string[] args)
         {
-            var fixture = new Fixture().Customize(new ImmutableCollectionCustomization());
+            var fixture = new Fixture().Customize(new ImmutableCollectionsCustomization());
 
             var immutableList = fixture.Create<ImmutableDictionary<string, string>>();
             Console.WriteLine("Hello World!");

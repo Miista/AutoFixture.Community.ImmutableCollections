@@ -4,7 +4,7 @@ using AutoFixture.Community.ImmutableCollections;
 // ReSharper disable once CheckNamespace
 namespace AutoFixture
 {
-  public class ImmutableCollectionCustomization : ICustomization
+  public class ImmutableCollectionsCustomization : ICustomization
   {
     public void Customize(IFixture fixture)
     {
