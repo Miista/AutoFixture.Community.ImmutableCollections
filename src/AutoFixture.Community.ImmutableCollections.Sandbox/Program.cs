@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Immutable;
 
 namespace AutoFixture.Community.ImmutableCollections.Sandbox
 {
@@ -9,7 +8,9 @@ namespace AutoFixture.Community.ImmutableCollections.Sandbox
         {
             var fixture = new Fixture().Customize(new ImmutableCollectionsCustomization());
 
-            var immutableList = fixture.Create<ImmutableDictionary<string, string>>();
+            var immutableDictionary = fixture.Create<System.Collections.Immutable.ImmutableDictionary<string, string>>();
+            var immutableIDictionary = fixture.Create<System.Collections.Immutable.IImmutableDictionary<string, string>>();
+            var immutableStack = fixture.Create<System.Collections.Immutable.ImmutableStack<string>>();
             Console.WriteLine("Hello World!");
         }
     }

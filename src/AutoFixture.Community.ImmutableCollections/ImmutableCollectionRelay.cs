@@ -89,16 +89,25 @@ namespace AutoFixture.Community.ImmutableCollections
                 collectionType: typeof(ImmutableSortedDictionary),
                 createMethodName: nameof(ImmutableSortedDictionary.CreateRange));
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="keyType"></param>
-        /// <param name="resultType"></param>
-        /// <param name="context"></param>
-        /// <param name="collectionType"></param>
-        /// <param name="createMethodName">The method must take either a params or a list of Ts</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <summary>Creates an immutable dictionary of the specified type.</summary>
+        /// <param name="keyType">The type for the dictionary keys.</param>
+        /// <param name="resultType">The type for the dictionary values.</param>
+        /// <param name="context">The specimen context.</param>
+        /// <param name="collectionType">The type of the dictionary.</param>
+        /// <param name="createMethodName">The name of the method used to create the collection. The method must take either a params or a list of Ts</param>
+        /// <returns>A collection of type <paramref name="collectionType"/>.</returns>
+        /// <remarks>The create method for the collection (parameter: <paramref name="createMethodName"/>) must take either:
+        ///     <list type="bullet">
+        ///         <item>
+        ///             <description>A params of <c>T</c>s, or</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>A list of <c>T</c>s</description>
+        ///         </item>
+        ///     </list>
+        ///     where <c>T</c> is <paramref name="resultType"/>.
+        /// </remarks>
+        /// <exception cref="ArgumentNullException">Any of the arguments are null.</exception>
         private static object CreateImmutableDictionary(
             Type keyType,
             Type resultType,
@@ -124,14 +133,26 @@ namespace AutoFixture.Community.ImmutableCollections
         }
 
         /// <summary>
-        /// 
+        /// Creates an immutable collection of the specified type.
+        /// The elements in the collection are of type <paramref name="resultType"/>.
         /// </summary>
-        /// <param name="resultType"></param>
-        /// <param name="context"></param>
-        /// <param name="collectionType"></param>
-        /// <param name="createMethodName">The method must take either a params or a list of Ts</param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException"></exception>
+        /// <param name="resultType">The type of elements that the collection should contain.</param>
+        /// <param name="context">The specimen context.</param>
+        /// <param name="collectionType">The type of the collection.</param>
+        /// <param name="createMethodName">The name of the method used to create the collection. The method must take either a params or a list of Ts.</param>
+        /// <returns>A collection of type <paramref name="collectionType"/> containing elements of type <paramref name="resultType"/>.</returns>
+        /// <remarks>The create method for the collection (parameter: <paramref name="createMethodName"/>) must take either:
+        ///     <list type="bullet">
+        ///         <item>
+        ///             <description>A params of <c>T</c>s, or</description>
+        ///         </item>
+        ///         <item>
+        ///             <description>A list of <c>T</c>s</description>
+        ///         </item>
+        ///     </list>
+        ///     where <c>T</c> is <paramref name="resultType"/>.
+        /// </remarks>
+        /// <exception cref="ArgumentNullException">Any of the arguments are null.</exception>
         private static object CreateImmutableCollection(
             Type resultType,
             ISpecimenContext context,
@@ -167,6 +188,14 @@ namespace AutoFixture.Community.ImmutableCollections
                        $"Could not find method '{createMethodName}' on type '{collectionType}'");
         }
 
+        /// <summary>
+        /// Determines if the first parameter to <paramref name="methodInfo"/> is an <see cref="IEnumerable{T}">IEnumerable</see> specialized to type <paramref name="type"/>.
+        /// </summary>
+        /// <param name="type">The type that the <see cref="IEnumerable{T}">IEnumerable</see> should be specialized to.</param>
+        /// <param name="methodInfo">The method whose first parameter to inspect.</param>
+        /// <returns>
+        /// <see langword="true">true</see> if the first parameter of <paramref name="methodInfo"/> is an enumerable of type <paramref name="type"/>; otherwise, <see langword="false">false</see>.</returns>
+        /// <exception cref="ArgumentNullException">Any of the arguments are null.</exception>
         private static bool FirstParameterIsEnumerableOfType(Type type, MethodInfo methodInfo)
         {
             if (type == null) throw new ArgumentNullException(nameof(type));
