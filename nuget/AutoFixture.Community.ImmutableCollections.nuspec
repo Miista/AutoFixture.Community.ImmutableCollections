@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>AutoFixture.Community.ImmutableCollections</id>
-    <version>1.0.0-alpha</version>
+    <version>1.0.0</version>
     <title>AutoFixture: Creating Immutable Collections</title>
     <authors>Søren Guldmund</authors>
     <owners>Søren Guldmund</owners>
